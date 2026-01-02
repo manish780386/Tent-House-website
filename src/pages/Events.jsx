@@ -14,7 +14,9 @@ const eventsData = [
   { id: 7, title: "Haldi", page: "/events/haldi" },
   { id: 8, title: "Mehndi", page: "/events/mehndi" },
   { id: 9, title: "Sunderkand", page: "/events/sunderkand" },
-];
+  { id: 10, title: "Sunderkand", page: "/events/sunderkand" },
+  { id: 11, title: "Sunderkand", page: "/events/sunderkand" },
+  ];
 
 // ===== Event Card Component =====
 function EventCard({ event, onCardClick }) {
