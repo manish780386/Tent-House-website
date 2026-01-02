@@ -1,0 +1,100 @@
+/* ===== Navbar Base ===== */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 12px 32px;
+  background: linear-gradient(90deg, #6a040f, #9d0208, #d00000);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* ===== Back Button ===== */
+.back-btn {
+  cursor: pointer;
+  color: #ffd700;
+  padding: 6px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+  background: rgba(255, 215, 0, 0.2);
+  transform: translateX(-3px);
+}
+
+/* ===== Logo Section ===== */
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: 500px;
+}
+
+.logo-section img {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: #fff;
+  padding: 4px;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+  color: #ffd700;
+  white-space: nowrap;
+}
+
+/* ===== Nav Links ===== */
+.nav-links {
+  display: flex;
+  gap: 26px;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.nav-item:hover {
+  background: rgba(255, 215, 0, 0.15);
+  color: #ffd700;
+}
+
+.nav-item.active {
+  background: #ffd700;
+  color: #6a040f;
+  font-weight: 600;
+}
+
+/* ===== Mobile ===== */
+@media (max-width: 700px) {
+  .logo {
+    font-size: 18px;
+  }
+
+  .nav-links {
+    gap: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .nav-links {
+    display: none; /* later hamburger */
+  }
+}

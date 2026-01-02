@@ -1,0 +1,75 @@
+.events-page {
+  padding: 50px 20px;
+  text-align: center;
+  background: #fff8f0;
+}
+
+.events-page h1 {
+  font-size: 36px;
+  color: #6a040f;
+  margin-bottom: 8px;
+}
+
+.events-page p {
+  color: #555;
+  font-size: 16px;
+  margin-bottom: 35px;
+}
+
+/* ===== Grid ===== */
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 25px;
+  justify-items: center;
+}
+
+/* ===== Event Card ===== */
+.event-card {
+  width: 200px;
+  height: 140px;
+  background: linear-gradient(135deg, #ffd700, #f5c518);
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  text-align: center;
+  font-weight: 700;
+  color: #6a040f;
+  padding: 10px;
+}
+
+.event-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+}
+
+.event-title {
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+.event-icon {
+  color: #6a040f;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .events-grid {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 18px;
+  }
+
+  .event-card {
+    height: 130px;
+  }
+
+  .event-title {
+    font-size: 16px;
+  }
+}

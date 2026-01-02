@@ -1,0 +1,105 @@
+/* ===== Page Base ===== */
+.booking-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #fffaf0, #fff1c1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+/* ===== Card ===== */
+.booking-card {
+  width: 100%;
+  max-width: 460px;
+  background: #ffffff;
+  padding: 34px 32px;
+  border-radius: 20px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+
+/* ===== Heading ===== */
+.booking-card h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  font-size: 28px;
+  color: #6a040f;
+  margin-bottom: 6px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 26px;
+}
+
+/* ===== Form ===== */
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* ===== Input Group ===== */
+.form-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  background: #fff7d1;
+  border-radius: 10px;
+  padding: 12px 14px;
+}
+
+.form-group svg {
+  color: #6a040f;
+}
+
+/* ===== Inputs ===== */
+.form-group input,
+.form-group select {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+
+  font-size: 14px;
+  color: #333;
+}
+
+/* ===== Button ===== */
+.book-btn {
+  margin-top: 12px;
+  padding: 14px;
+
+  background: linear-gradient(135deg, #6a040f, #9d0208);
+  color: #fff;
+
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.book-btn:hover {
+  background: linear-gradient(135deg, #9d0208, #d00000);
+  transform: translateY(-2px);
+}
+
+/* ===== Mobile ===== */
+@media (max-width: 500px) {
+  .booking-card {
+    padding: 28px 22px;
+  }
+
+  .booking-card h1 {
+    font-size: 24px;
+  }
+}

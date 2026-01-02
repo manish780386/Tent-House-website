@@ -1,0 +1,98 @@
+/* ===== Footer Base ===== */
+.footer {
+  background: linear-gradient(
+    135deg,
+    #6a040f,
+    #9d0208,
+    #d00000
+  );
+  color: #fff;
+  margin-top: 50px;
+  box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* ===== Footer Layout ===== */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 40px 60px;
+  flex-wrap: wrap;
+}
+
+/* ===== Footer Sections ===== */
+.footer-section {
+  flex: 1;
+  min-width: 220px;
+}
+
+.footer-section h2 {
+  color: #ffd700;
+  margin-bottom: 10px;
+}
+
+.footer-section h3 {
+  color: #ffd700;
+  margin-bottom: 12px;
+}
+
+.footer-section p {
+  font-size: 15px;
+  line-height: 1.6;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* ===== Social Icons ===== */
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.social-icons a {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #ffd700;
+  color: #6a040f;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  background: #fff;
+  transform: translateY(-4px);
+}
+
+/* ===== Bottom Bar ===== */
+.footer-bottom {
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .footer-container {
+    padding: 30px 20px;
+  }
+
+  .footer-section {
+    text-align: center;
+  }
+
+  .footer-section p {
+    justify-content: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,105 @@
+/* ===== Page Base ===== */
+.sunderkand-page {
+  min-height: 100vh;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #fff8e1, #fff3cd);
+  text-align: center;
+  animation: fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== Header ===== */
+.sunderkand-header h1 {
+  font-size: 40px;
+  color: #7b1e1e;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+.sunderkand-header p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 50px;
+}
+
+/* ===== Cards Grid ===== */
+.sunderkand-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* ===== Card ===== */
+.sunderkand-card {
+  background: #fff;
+  padding: 28px 22px;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+  transition: all 0.35s ease;
+}
+
+.sunderkand-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.25);
+}
+
+/* Icon */
+.sunderkand-card svg {
+  color: #b8860b;
+  margin-bottom: 14px;
+}
+
+/* Card Title */
+.sunderkand-card h3 {
+  font-size: 20px;
+  color: #7b1e1e;
+  margin-bottom: 8px;
+}
+
+/* Card Text */
+.sunderkand-card p {
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: #444;
+}
+
+/* ===== Footer ===== */
+.sunderkand-footer {
+  margin-top: 60px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sunderkand-footer p {
+  font-size: 15.5px;
+  color: #5a3a1a;
+  line-height: 1.7;
+  background: rgba(255, 255, 255, 0.6);
+  padding: 18px 24px;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== Mobile ===== */
+@media (max-width: 600px) {
+  .sunderkand-header h1 {
+    font-size: 30px;
+  }
+
+  .sunderkand-header p {
+    font-size: 14px;
+  }
+}

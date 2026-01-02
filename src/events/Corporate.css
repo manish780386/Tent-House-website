@@ -1,0 +1,107 @@
+/* ===== Page Base ===== */
+.corporate-page {
+  min-height: 100vh;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #f4f6f8, #e9ecef);
+  text-align: center;
+  animation: fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== Header ===== */
+.corporate-header h1 {
+  font-size: 38px;
+  font-weight: 700;
+  color: #1f2933;
+  margin-bottom: 8px;
+}
+
+.corporate-header p {
+  font-size: 16px;
+  color: #4b5563;
+  margin-bottom: 50px;
+}
+
+/* ===== Cards Grid ===== */
+.corporate-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* ===== Card ===== */
+.corporate-card {
+  background: #ffffff;
+  padding: 30px 24px;
+  border-radius: 16px;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.15);
+  transition: all 0.35s ease;
+  border-top: 5px solid #1f2933;
+}
+
+.corporate-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.22);
+}
+
+/* Icon */
+.corporate-card svg {
+  color: #1f2933;
+  margin-bottom: 16px;
+}
+
+/* Card Title */
+.corporate-card h3 {
+  font-size: 20px;
+  color: #111827;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+/* Card Text */
+.corporate-card p {
+  font-size: 14.8px;
+  line-height: 1.6;
+  color: #374151;
+}
+
+/* ===== Footer ===== */
+.corporate-footer {
+  margin-top: 60px;
+  max-width: 850px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.corporate-footer p {
+  font-size: 15.5px;
+  color: #1f2933;
+  line-height: 1.7;
+  background: rgba(255, 255, 255, 0.75);
+  padding: 20px 26px;
+  border-radius: 14px;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== Mobile ===== */
+@media (max-width: 600px) {
+  .corporate-header h1 {
+    font-size: 28px;
+  }
+
+  .corporate-header p {
+    font-size: 14px;
+  }
+}
