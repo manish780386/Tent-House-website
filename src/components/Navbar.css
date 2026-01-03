@@ -32,7 +32,6 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-right: 500px;
 }
 
 .logo-section img {
@@ -54,6 +53,7 @@
 .nav-links {
   display: flex;
   gap: 26px;
+  align-items: center;
 }
 
 .nav-item {
@@ -91,10 +91,17 @@
 
 /* ===== Mobile ===== */
 @media (max-width: 768px) {
+  /* Logo smaller */
   .logo {
     font-size: 18px;
   }
 
+  /* Hamburger visible */
+  .hamburger {
+    display: block;
+  }
+
+  /* Nav links become vertical and hidden by default */
   .nav-links {
     position: absolute;
     top: 64px;
@@ -114,12 +121,9 @@
     transform: translateX(0);
   }
 
+  /* Nav items full width in mobile menu */
   .nav-item {
     padding: 12px 20px;
     width: 100%;
-  }
-
-  .hamburger {
-    display: block;
   }
 }
