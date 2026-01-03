@@ -1,16 +1,18 @@
+import { useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import {
   Home,
   CalendarCheck,
   PartyPopper,
-  ArrowLeft
+  ArrowLeft,
+  Menu
 } from "lucide-react";
 import "./Navbar.css";
-
 import logo from "../assets/Logo/logo.png";
 
 export default function Navbar() {
   const navigate = useNavigate();
+  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <nav className="navbar">
@@ -26,17 +28,22 @@ export default function Navbar() {
         <div className="logo">Maa Parvati Tent House</div>
       </div>
 
+      {/* Hamburger Icon */}
+      <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
+        <Menu size={26} />
+      </div>
+
       {/* Menu */}
-      <div className="nav-links">
-        <NavLink to="/" className="nav-item">
+      <div className={`nav-links ${menuOpen ? "open" : ""}`}>
+        <NavLink to="/" className="nav-item" onClick={() => setMenuOpen(false)}>
           <Home size={18} /> Home
         </NavLink>
 
-        <NavLink to="/events" className="nav-item">
+        <NavLink to="/events" className="nav-item" onClick={() => setMenuOpen(false)}>
           <PartyPopper size={18} /> Events
         </NavLink>
 
-        <NavLink to="/booking" className="nav-item">
+        <NavLink to="/booking" className="nav-item" onClick={() => setMenuOpen(false)}>
           <CalendarCheck size={18} /> Booking
         </NavLink>
       </div>
