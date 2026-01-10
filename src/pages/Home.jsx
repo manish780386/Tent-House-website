@@ -30,8 +30,8 @@ export default function Home() {
           <PhoneCall size={24} />
           <div>
             <h4>Call Us</h4>
-            <p>+91 98765 43210</p>
-            <p>+91 98765 43210</p>
+            <p>+91 9827531832</p>
+            <p>+91 9827531832</p>
 
           </div>
         </div>
@@ -48,7 +48,7 @@ export default function Home() {
       {/* ===== CTA Buttons ===== */}
       <div className="home-cta">
         <a
-          href="tel:9876543210"
+          href="tel:9827531832"
           className="btn call"
           target="_blank"
           rel="noopener noreferrer"
@@ -100,7 +100,7 @@ export default function Home() {
           </p>
 
           <a
-            href="https://www.google.com/maps"
+            href="https://www.google.com/maps/search/ma+parvati+tent+house/@22.694948,75.8874097,11z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI2MDEwNy4wIKXMDSoASAFQAw%3D%3D"
             target="_blank"
             rel="noopener noreferrer"
             className="map-link"

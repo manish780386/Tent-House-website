@@ -8,7 +8,7 @@
   align-items: center;
   justify-content: space-between;
 
-  padding: 12px 32px;
+  padding: 10px 16px;
   background: linear-gradient(90deg, #6a040f, #9d0208, #d00000);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
 }
@@ -31,19 +31,19 @@
 .logo-section {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
 }
 
 .logo-section img {
-  width: 46px;
-  height: 46px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   background: #fff;
   padding: 4px;
 }
 
 .logo {
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 700;
   color: #ffd700;
   white-space: nowrap;
@@ -52,17 +52,17 @@
 /* ===== Nav Links ===== */
 .nav-links {
   display: flex;
-  gap: 26px;
+  gap: 20px;
   align-items: center;
 }
 
 .nav-item {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
 
   text-decoration: none;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 500;
   color: #fff;
 
@@ -89,22 +89,15 @@
   color: #ffd700;
 }
 
-/* ===== Mobile ===== */
+/* ===== Tablet / Mobile ===== */
 @media (max-width: 768px) {
-  /* Logo smaller */
-  .logo {
-    font-size: 18px;
+  .logo-section {
+    flex: 1; /* Take available space */
   }
 
-  /* Hamburger visible */
-  .hamburger {
-    display: block;
-  }
-
-  /* Nav links become vertical and hidden by default */
   .nav-links {
     position: absolute;
-    top: 64px;
+    top: 60px;
     right: 0;
     flex-direction: column;
     background: linear-gradient(90deg, #6a040f, #9d0208, #d00000);
@@ -121,9 +114,37 @@
     transform: translateX(0);
   }
 
-  /* Nav items full width in mobile menu */
   .nav-item {
     padding: 12px 20px;
     width: 100%;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .logo {
+    font-size: 16px; /* Mobile friendly */
+  }
+}
+
+/* ===== Small Mobile ===== */
+@media (max-width: 480px) {
+  .nav-links {
+    width: 180px;
+  }
+
+  .logo-section img {
+    width: 36px;
+    height: 36px;
+  }
+
+  .logo {
+    font-size: 14px;
+  }
+
+  .nav-item {
+    padding: 10px 16px;
+    font-size: 13px;
   }
 }

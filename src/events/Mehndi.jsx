@@ -6,6 +6,8 @@ import {
   Palette
 } from "lucide-react";
 import "./Mehndi.css";
+import mehndi1 from "../assets/pdf/mehndi1.png";
+import mehndi2 from "../assets/pdf/mehndi2.mp4";
 
 export default function Mehndi() {
   return (
@@ -45,6 +47,30 @@ export default function Mehndi() {
         </div>
 
       </div>
+
+      <div>
+        {/* ===== Image Section ===== */}
+        <div className="mehndi-image-section">
+          <img
+            src={mehndi1}
+            alt="Mehndi Decoration"
+            className="mehndi-image"
+          />
+        </div>
+      </div>
+
+      <div>
+        {/* ===== video Section ===== */}
+        <div className="mehndi-video-section">
+          <video
+            src={mehndi2}
+            controls
+            className="mehndi-video"
+          />
+        </div>
+      </div>
+
+
 
       {/* ===== Footer Text ===== */}
       <div className="mehndi-footer">

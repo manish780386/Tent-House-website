@@ -6,6 +6,7 @@ import {
   Music
 } from "lucide-react";
 import "./Sunderkand.css";
+import sunder1 from "../assets/pdf/sunder1.mp4";
 
 export default function Sunderkand() {
   return (
@@ -52,6 +53,17 @@ export default function Sunderkand() {
           </p>
         </div>
 
+      </div>
+
+      <div>
+        {/* ===== video Section ===== */}
+        <div className="sunderkand-video-section">
+          <video
+            src={sunder1}
+            controls
+            className="sunderkand-video"
+          />
+        </div>
       </div>
 
       {/* ===== Footer ===== */}
