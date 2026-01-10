@@ -57,7 +57,7 @@ export default function Home() {
         </a>
 
         <a
-          href="https://wa.me/qr/MXTXWQAJ35OOF1"
+          href="#"
           className="btn whatsapp"
           target="_blank"
           rel="noopener noreferrer"
@@ -75,7 +75,7 @@ export default function Home() {
         <img src={founder} alt="Founder" />
 
         <div className="founder-content">
-          <h2>Founder Mr. Manchit Gayakwad</h2>
+          <h2>Founder- Mr. Manchit Gayakwad</h2>
           <p className="experience">10+ Years Experience</p>
 
           <p>
